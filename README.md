@@ -1,6 +1,5 @@
 # 🛡️ AntiNix-Panzer-Gateway — Version Ironclad 1.11.26
-<img width="1600" height="900" alt="screenshot" src="https://github.com/user-attachments/assets/af3dd7b9-7d60-46d7-b7b5-a95203a15ff2" />
-
+<img width="1598" height="797" alt="unter-last-mit-workstation" src="https://github.com/user-attachments/assets/49e570ec-a7c9-4ef8-ae05-6dcd4fef0ab6" />
 An ultra-lightweight, systemd-free, hardened **Tor Gateway** built on top of the rock-solid antiX Linux (Debian base). It acts as an impenetrable digital armor, isolating and routing all network traffic from any connected Workstation securely through the Tor network. 
 
 Inspired by Whonix, but engineered without systemd overhead to be faster, more secure, and extremely resource-efficient.
