@@ -43,16 +43,25 @@ Inspired by Whonix, but engineered without systemd overhead to be faster, more s
 * **Universal Workstation Compatibility:** Open to any client OS. Connect a Whonix-Workstation, Debian, Tails, or even a Windows VM to `eth1` and route it instantly and safely.
 
 ---
-
 ## 💾 Downloads & Integrity Verification
 
 To ensure your download has not been corrupted or tampered with, always verify the checksum after downloading.
 
 | File Name | Format | Source | Checksum & Hash Value |
 | :--- | :--- | :--- | :--- |
-| `AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova` | VM Appliance | [Download from MEGA](https://mega.nz) | **SHA-256:** `eeba5088625db5c338fe52e0da13657b1b786665427184a70d0c123257a13266` / [./antinix-panzer-gateway-ironclad-1.11.26.iso.md5) |
-| `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | [Download from MEGA](HIER_DEINEN_MEGA_ISO_LINK_EINFÜGEN) | **MD5:** `78ac36df8ca63f000df715c229222ef2` / [View File](link hier
-) |
+| `AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova` | VM Appliance | [Download from MEGA](https://mega.nz) | **SHA-256:** `eeba5088625db5c338fe52e0da13657b1b786665427184a70d0c123257a13266` / [View File](./AntiNix-Panzer-Gateway-Ironclad%201.11.26.ova.sha256) |
+| `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | [Download from MEGA](https://mega.nz/file/DexlGDqQ#ezPj9BYAlYEwwKHogDDRs5H9t2gmcEQgljZoxS7yXqY) | **MD5:** `78ac36df8ca63f000df715c229222ef2` / [View File](./antinix-panzer-gateway-ironclad-1.11.26.iso.md5) |
+
+### How to verify on your host system:
+
+#### For the VM Appliance (.ova):
+* **Linux:** `sha256sum "AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova"`
+* **Windows (PowerShell):** `Get-FileHash ".\AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova" -Algorithm SHA256`
+
+#### For the Installation Image (.iso):
+* **Linux:** `md5sum antinix-panzer-gateway-ironclad-1.11.26.iso`
+* **Windows (PowerShell):** `Get-FileHash .\antinix-panzer-gateway-ironclad-1.11.26.iso -Algorithm MD5`
+
 
 ### How to verify on your host system:
 
