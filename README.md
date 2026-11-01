@@ -48,10 +48,10 @@ Inspired by Whonix, but engineered without systemd overhead to be faster, more s
 
 To ensure your download has not been corrupted or tampered with, always verify the checksum after downloading.
 
-| File Name | Format | Checksum Type | Hash Value |
+| File Name | Format | Source | Checksum & Hash Value |
 | :--- | :--- | :--- | :--- |
-| `AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova` | VM Appliance | **SHA-256** | `eeba5088625db5c338fe52e0da13657b1b786665427184a70d0c123257a13266` |
-| `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | **MD5** | `78ac36df8ca63f000df715c229222ef2` |
+| `AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova` | VM Appliance | [Download from MEGA](https://mega.nz) | **SHA-256:** `eeba5088625db5c338fe52e0da13657b1b786665427184a70d0c123257a13266` / [View File](./sha256sum.txt) |
+| `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | [Download from MEGA](HIER_DEINEN_MEGA_ISO_LINK_EINFÜGEN) | **MD5:** `78ac36df8ca63f000df715c229222ef2` / [View File](./md5sum.txt) |
 
 ### How to verify on your host system:
 
