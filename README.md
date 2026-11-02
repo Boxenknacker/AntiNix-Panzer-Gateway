@@ -71,10 +71,10 @@ To ensure your download has not been corrupted or tampered with, always verify t
 
 ## 🚀 Quick Start & Deployment (.ova)
 
-To avoid manual partitioning and bypass virtual environment NVRAM constraints, we highly recommend using the pre-configured appliance:
+To avoid manual partitioning and bypass virtual environment NVRAM constraints, follow these steps to set up the Live ISO:
 
-1. Download the `.ova` file from the **Releases** tab and verify the SHA-256 hash.
-2. In VirtualBox, go to **File** ➔ **Import Appliance** and select the file.
+1. Download the `.iso` file from the source link and verify the MD5 hash.
+2. In VirtualBox, create a new VM (Type: Linux / Debian 64-bit) and mount the `.iso` file as an optical drive under **Settings** ➔ **Storage**.
 3. Ensure your target Workstation VM's network adapter is set to **Internal Network** linked to the Gateway's `eth1` interface.
 
 ### 🔑 Default Credentials
