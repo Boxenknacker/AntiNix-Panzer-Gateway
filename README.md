@@ -52,10 +52,6 @@ To ensure your download has not been corrupted or tampered with, always verify t
 
 ### How to verify on your host system:
 
-#### For the VM Appliance (.ova):
-* **Linux:** `sha256sum "AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova"`
-* **Windows (PowerShell):** `Get-FileHash ".\AntiNix-Panzer-Gateway-Ironclad 1.11.26.ova" -Algorithm SHA256`
-
 #### For the Installation Image (.iso):
 * **Linux:** `md5sum antinix-panzer-gateway-ironclad-1.11.26.iso`
 * **Windows (PowerShell):** `Get-FileHash .\antinix-panzer-gateway-ironclad-1.11.26.iso -Algorithm MD5`
