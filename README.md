@@ -50,12 +50,6 @@ To ensure your download has not been corrupted or tampered with, always verify t
 | :--- | :--- | :--- | :--- |
 | `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | [Download from MEGA](https://mega.nz/file/qPxTkIIB#nkin_Iv7DZqbNWN9mnQxvGYzvVExbI-FsCy0eIDuXN0) | **MD5:** `cf5cc2017e80c1543d794e9193981f53` / [View File](./antinix-panzer-gateway-ironclad-1.11.26.iso.md5) |
 
-### How to verify on your host system:
-
-#### For the Installation Image (.iso):
-* **Linux:** `md5sum antinix-panzer-gateway-ironclad-1.11.26.iso`
-* **Windows (PowerShell):** `Get-FileHash .\antinix-panzer-gateway-ironclad-1.11.26.iso -Algorithm MD5`
-
 
 ### How to verify on your host system:
 
