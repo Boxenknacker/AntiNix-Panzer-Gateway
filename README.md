@@ -48,7 +48,7 @@ To ensure your download has not been corrupted or tampered with, always verify t
 
 | File Name | Format | Source | Checksum & Hash Value |
 | :--- | :--- | :--- | :--- |
-| `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | [Download from MEGA](https://mega.nz/file/vDxzhaxK#8OBNOLsM8lz4jWTyG-CuJ97UkiS8B2l_BzF_uH3okrM) | **MD5:** `90821d37d06d08cd2948f472283cd9bb` / [View File](./antinix-panzer-gateway-ironclad-1.11.26.iso.md5) |
+| `antinix-panzer-gateway-ironclad-1.11.26.iso` | Live ISO | [Download from MEGA](https://mega.nz/file/vDxzhaxK#8OBNOLsM8lz4jWTyG-CuJ97UkiS8B2l_BzF_uH3okrM) | **MD5:** `d8dcd1943b1b00fc4decdcb65e35b159` / [View File](./antinix-panzer-gateway-ironclad-1.11.26.iso.md5) |
 
 
 ### How to verify on your host system:
