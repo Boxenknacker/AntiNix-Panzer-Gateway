@@ -1,4 +1,4 @@
-# # 🛡️ AntiNix-Panzer-Gateway — Version Ironclad 1.11.26
+# 🛡️ AntiNix-Panzer-Gateway — Version Ironclad 1.11.26
 > **"Lightweight outside. Ironclad inside."**
 <img width="1598" height="797" alt="unter-last-mit-workstation" src="https://github.com/user-attachments/assets/49e570ec-a7c9-4ef8-ae05-6dcd4fef0ab6" />
 
@@ -26,13 +26,14 @@ An ultra-lightweight, systemd-free, hardened **Tor Gateway** built on antiX Linu
 * **Fixed Network Interface Names:** Hardcoded as `eth0` (External Internet) and `eth1` (Internal Workstation LAN) for predictability.
 * **Tor Autostart with Nyx:** Automatic initialization with live monitoring via **Nyx**.
 * **UTC System Time:** Enforces Coordinated Universal Time to prevent time-zone fingerprinting.
-
+  
 ### 2. Kernel & OS Hardening
-* **Kernel Hardening:** Restrictive `sysctl` and boot configurations against exploits.
+* **Kernel Hardening:** Restrictive sysctl and boot configurations against exploits.
 * **BPF Kernel Filter:** Kernel-space Berkeley Packet Filters to drop malicious packets.
 * **RAM Protection:** Prevents unauthorized memory dumping of sensitive data.
 * **Systemd-Free Architecture:** Powered by SysVinit/Runit for a minimal attack surface.
 * **First-Boot SSH Key Generation:** Unique SSH host keys are generated securely on the first boot.
+* **Anti-Forensic RAM Wiping (secure-delete):** Integrated native hooks into the SysVinit/Runit shutdown sequences. Upon power-off, sdmem instantly overwrites the unallocated memory layer, wiping transient Tor circuits, SSH sessions, and keys before power truncation.
 
 ### 3. Performance & User Experience
 * **Ultra-Lightweight Idle:** Consumes only 200–250 MB RAM.
@@ -85,3 +86,4 @@ An ultra-lightweight, systemd-free, hardened **Tor Gateway** built on antiX Linu
 1. **Disclaimer of Liability:** Provided "as is" without warranties of any kind. Developers are not liable for any damages arising from its use.
 2. **Lawful Use Only:** Users must comply with all local and international laws regarding privacy and the Tor network.
 3. **Trademark Notice:** Independent open-source derivative not affiliated with The Tor Project, antiX Linux, Debian, or Oracle.
+
