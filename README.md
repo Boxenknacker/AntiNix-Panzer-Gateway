@@ -35,11 +35,15 @@ Inspired by Whonix, but engineered without systemd overhead to be faster, more s
 * **First-Boot SSH Key Generation:** Contains no pre-baked cryptographic keys. Unique SSH host keys are generated securely on the user's first boot, preventing supply-chain interception.
 
 ### 3. Performance & User Experience
-* **Ultra-Lightweight Idle:** Consumes only **200 to 250 MB RAM** at idle. Ideal for older hardware and resource-constrained host machines.
+
+* **Ultra-Lightweight Idle:** Consumes only 200 to 250 MB RAM at idle. Ideal for older hardware and resource-constrained host machines.
 * **Intelligent GUI (IceWM Desktop):** Hardcore security doesn't mean terminal-only torture. Includes a highly optimized, lightweight graphical user interface.
 * **Graphical Control Center:** An in-house control dashboard allows users to start, stop, or reload the Tor Gateway with a single click while visually checking the system's security status.
 * **Live Hardware Monitors:** Real-time desktop widgets display exact network interface activity, RAM consumption, and CPU load at a glance.
-* **Universal Workstation Compatibility:** Open to any client OS. Connect a Whonix-Workstation, Debian, Tails, or even a Windows VM to `eth1` and route it instantly and safely.
+* **Universal Workstation Compatibility:** Designed as a high-performance, resource-saving gateway open to any standard client OS. Connect a standard Debian, Windows, or custom VM to `eth1` and route its traffic instantly and safely through Tor. 
+
+*(Note on specialized OS: A standard Whonix-Workstation is hardcoded to its own gateway IP and requires manual subnet configuration to connect. Running Tails inside a VM is generally not recommended due to hypervisor amnesia risks. This gateway excels at torifying standard, lightweight target operating systems).*
+
 
 ---
 ## 💾 Downloads & Integrity Verification
