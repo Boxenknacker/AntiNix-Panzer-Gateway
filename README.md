@@ -73,6 +73,13 @@ An ultra-lightweight, systemd-free, hardened **Tor Gateway** built on antiX Linu
 
 ---
 
+## ❓ Frequently Asked Questions (FAQ)
+
+### Q: Why is there no web browser installed on the Panzer-Gateway?
+**A:** By design and strict security policy. Following the industry-standard Whonix architecture, a routing gateway must never run a web browser. Opening a browser on the gateway breaches the isolation boundary; a browser exploit could instantly reveal the host's real external WAN IP address (deanonymization). All web traffic must be isolated to the connected Workstation.
+
+---
+
 ## ⚖️ Legal Disclaimer & Terms of Use
 
 1. **Disclaimer of Liability:** Provided "as is" without warranties of any kind. Developers are not liable for any damages arising from its use.
