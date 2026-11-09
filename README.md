@@ -2,6 +2,9 @@
 
 **"Lightweight outside. Ironclad inside."**
 
+> **🔄 Release Rebuild in Progress:** The ISO image was temporarily taken offline to ensure a 100% clean first-boot SSH host-key generation (`zero-key` baseline). **The updated ISO and fresh SHA256 checksums will be available again shortly.**
+
+
 <img width="1600" height="775" alt="Github" src="https://github.com/user-attachments/assets/3d6b9d03-81c7-4a53-895b-8fd11c37506c" />
 
 An ultra-lightweight, systemd-free, heavily hardened **Tor & I2P Gateway** built on top of the rock-solid antiX Linux (Debian stable base). It acts as an impenetrable digital armor, isolating and routing all network traffic from any connected Workstation securely through the Tor network—with automated Snowflake censorship circumvention and optional parallel I2P routing.
