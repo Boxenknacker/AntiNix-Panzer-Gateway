@@ -1,0 +1,23 @@
+if [ "$interface" = "eth0" ]; then
+    if [ "$reason" = "BOUND" ] || [ "$reason" = "RENEW" ] || [ "$reason" = "REBIND" ]; then
+        if ! pgrep -x tor > /dev/null; then
+            rm -f /tmp/tor-boot.log
+            su -s /bin/bash -c "LD_LIBRARY_PATH=/opt/tor /opt/tor/tor -f /opt/tor/etc/tor/torrc --Log 'notice file /tmp/tor-boot.log' &" debian-tor
+            CONNECTED=0
+            for i in $(seq 1 15); do
+                if grep -q "Bootstrapped 100%" /tmp/tor-boot.log 2>/dev/null; then
+                    CONNECTED=1
+                    break
+                fi
+                sleep 1
+            done
+            if [ "$CONNECTED" -eq 0 ]; then
+                pkill -x tor
+                sleep 1
+                rm -f /tmp/tor-boot.log
+                su -s /bin/bash -c "LD_LIBRARY_PATH=/opt/tor /opt/tor/tor -f /opt/tor/etc/tor/torrc.snowflake --Log 'notice file /tmp/tor-boot.log' &" debian-tor
+            fi
+            su -s /bin/bash -c "sed -i 's/^Icon=.*/Icon=network-transmit-receive/' /home/user/Desktop/tor-schalter.desktop 2>/dev/null" user
+        fi
+    fi
+fi

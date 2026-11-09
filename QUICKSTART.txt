@@ -1,0 +1,43 @@
+====================================================================
+  ANTINIX PANZER-GATEWAY (IRONCLAD) - QUICK-START & SPICKZETTEL
+====================================================================
+
+1. VM-VERKABELUNG (VIRTUALBOX / QEMU / KVM)
+--------------------------------------------------------------------
+  * Gateway VM:
+      Adapter 1 (eth0 - WAN): NAT oder Netzwerkbruecke (Internet)
+      Adapter 2 (eth1 - LAN): Internes Netzwerk (z.B. "PanzerNet")
+  * Workstation VM (Linux, Windows, BSD):
+      NUR 1 Adapter: Gleiches Internes Netzwerk ("PanzerNet")!
+      (Niemals einen zweiten WAN-Adapter an die Workstation haengen)
+
+2. GATEWAY STARTEN & PRUEFEN
+--------------------------------------------------------------------
+  * Nach dem Booten greifen eBPF/XDP + nftables sofort (Fail-Closed).
+  * Beim Slimski-Login startet Tor automatisch unter UID 107.
+  * Linkes Conky-Panel pruefen:
+      [ OK ] TOR ANONYMISIERUNG LIVE  -> Tor ist verbunden
+      TOR-MODUS: DIREKT / SNOWFLAKE  -> Auto-Zensurschutz aktiv
+      [ OK ] DHCP-SERVER BEREIT       -> Bereit fuer Workstation
+
+3. WORKSTATION EINRICHTEN (TOR & OPTIONAL I2P)
+--------------------------------------------------------------------
+  * Standard-Tor-Modus (Automatisch / Zero-Config):
+      Workstation auf DHCP stellen (oder statisch:
+      IP: 10.152.152.11 | Maske: 255.255.255.0 | GW/DNS: 10.152.152.10)
+      -> Gesamter TCP- und DNS-Traffic laeuft zwingend durch Tor!
+
+  * Optionaler I2P-Modus (.i2p Eepsites parallel nutzen):
+      1. Auf dem Gateway "Tor Gateway Monitor" -> [ START I2P ] klicken
+      2. Warten bis Conky "[ OK ] I2P ROUTER AKTIV (4444/4447)" zeigt
+      3. Im Workstation-Browser (zweites Profil) Proxy eintragen:
+           HTTP-Proxy:  10.152.152.10  | Port: 4444
+           SOCKS5-Host: 10.152.152.10  | Port: 4447
+
+4. DESKTOP-WERKZEUGE & NOTFALL-SCHALTER
+--------------------------------------------------------------------
+  * Tor Gateway Monitor: Tor & I2P per Klick starten / stoppen
+  * SSH-Verbindung:      Startet den Krypto-Key-Wizard
+  * PANIC KILL-SWITCH:   Sofortiger OPSEC-Notaus (trennt eth0/eth1,
+                         nullt Tor/I2P-Keys im RAM, harter Poweroff)
+====================================================================

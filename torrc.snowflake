@@ -1,0 +1,5 @@
+%include /opt/tor/etc/tor/torrc
+
+UseBridges 1
+ClientTransportPlugin snowflake exec /usr/bin/snowflake-client -url https://snowflake-broker.torproject.net.global.prod.fastly.net/ -front cdn.sstatic.net -ice stun:stun.services.mozilla.com:3478,stun:stun.freifunk-dresden.de:3478
+Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDC88824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDC88824814F80A72 url=https://snowflake-broker.torproject.net.global.prod.fastly.net/ fronts=cdn.sstatic.net,www.phmyyadmin.net ice=stun:stun.services.mozilla.com:3478,stun:stun.freifunk-dresden.de:3478 utls-imitate=hellorandomizedalpn

@@ -1,0 +1,33 @@
+sudo tee /etc/init.d/ebpf-firewall > /dev/null << 'EOF'
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          ebpf-firewall
+# Required-Start:    $network
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Startet den eBPF/XDP-Schild auf eth0
+### END INIT INFO
+
+case "$1" in
+    start)
+        echo "Lade eBPF/XDP Panzer-Filter auf eth0..."
+        /usr/sbin/xdp-filter load -m skb eth0
+        /usr/sbin/nft -f /etc/nftables.conf
+        ;;
+    stop)
+        echo "Entlade eBPF/XDP Panzer-Filter..."
+        /usr/sbin/xdp-filter unload eth0
+        ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
+    *)
+        echo "Benutzung: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
+exit 0
+EOF
+                                                                                                                

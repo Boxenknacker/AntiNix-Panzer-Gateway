@@ -1,0 +1,21 @@
+# =====================================================================
+# ANTINIX PANZER-GATEWAY - TOR CORE CONFIGURATION
+# =====================================================================
+DataDirectory /opt/tor/var/lib/tor
+
+# Transparent Proxy & DNS für Gateway (127.0.0.1) und Workstation (eth1)
+TransPort 0.0.0.0:9040
+DNSPort 0.0.0.0:5353
+
+# Keep the same Tor circuit active for 24 hours to reduce node switching
+MaxCircuitDirtiness 86400
+
+# =====================================================================
+# ONION-SHARE & FILTER-PROXY AUTOMATION (COOKIE-AUTHENTICATION)
+# =====================================================================
+ControlPort 9051
+CookieAuthentication 1
+CookieAuthFile /opt/tor/var/lib/tor/control_auth_cookie
+CookieAuthFileGroupReadable 1
+
+SocksPort 127.0.0.1:9050
