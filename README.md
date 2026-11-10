@@ -160,8 +160,8 @@ If you prefer a clean install via our `.iso` file on custom VMs or bare metal:
 
 * **Bare Metal (Real PC):** Flash the ISO to a USB drive (using Rufus or Ventoy) and boot. The installation will run smoothly.
 * **VirtualBox ISO Notice (Known Issue):** If you install the `.iso` inside VirtualBox and experience a `GRUB installation failed` error at the very end, this is caused by VirtualBox's NVRAM restrictions. 
-  * **How to fix it:** In the GRUB installation step inside the installer, simply check the box that says **"Force extra removable"** (or *no-nvram*). Alternatively, create and run the VM in classic **Legacy/BIOS** mode instead of UEFI.
-  * 4. **Activate Persistent Firewall & DHCP Routing (First Boot):**
+** **How to fix it:** In the GRUB installation step inside the installer, simply check the box that says **"Force extra removable"** (or *no-nvram*). Alternatively, create and run the VM in classic **Legacy/BIOS** mode instead of UEFI.
+ ** 4. **Activate Persistent Firewall & DHCP Routing (First Boot):**
    Run this one-liner once in the Gateway terminal to enable the persistent `nftables` ruleset and `eth1` DHCP server across reboots:
    ```bash
    sudo cp -n /etc/dnsmasq.conf.dpkg-old /etc/dnsmasq.conf 2>/dev/null; sudo nft -f /etc/nftables.conf && sudo ip link set eth1 up && sudo ip addr replace 10.152.152.10/18 dev eth1 && sudo service dnsmasq restart && (grep -q "nft -f /etc/nftables.conf" /etc/rc.local || sudo sed -i '/^exit 0/i nft -f /etc/nftables.conf\nip link set eth1 up\nip addr replace 10.152.152.10/18 dev eth1\nservice dnsmasq restart' /etc/rc.local)
