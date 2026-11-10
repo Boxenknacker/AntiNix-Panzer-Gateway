@@ -2,9 +2,6 @@
 
 **"Lightweight outside. Ironclad inside."**
 
-> **🔄 Release Rebuild in Progress:** The ISO image was temporarily taken offline to ensure a 100% clean first-boot SSH host-key generation (`zero-key` baseline). **The updated ISO and fresh SHA256 checksums will be available again shortly.**
-
-
 <img width="1600" height="775" alt="Github" src="https://github.com/user-attachments/assets/3d6b9d03-81c7-4a53-895b-8fd11c37506c" />
 
 An ultra-lightweight, systemd-free, heavily hardened **Tor & I2P Gateway** built on top of the rock-solid antiX Linux (Debian stable base). It acts as an impenetrable digital armor, isolating and routing all network traffic from any connected Workstation securely through the Tor network—with automated Snowflake censorship circumvention and optional parallel I2P routing.
@@ -97,28 +94,18 @@ Inspired by Whonix, but engineered completely without systemd overhead to be fas
 
 ## 📥 Download & Checksum Verification
 
-* **Official Download (Live ISO / Installer):** [Download `antinix-panzer-gateway-ironclad.iso` (2.03 GB via MEGA)](https://mega.nz/file/GeohWb5I#vWtRfGERxi1ChgEw-NPLa68mVDxqUa4F3YSyfhieFp0)
+* **Official Download (Live ISO / Installer):** [Download `antinix-panzer-gateway.iso` (2.03 GB via MEGA)](https://mega.nz/file/WCRyhRyJ#vaOi5emHFcO5nc9bGgFU3aXAyDwhvEnBv2RjPs5hS4g)
 
-To ensure your download has not been corrupted or tampered with, always verify the checksum after downloading.
+| File Name | Checksum Type | Hash Value |
+| :--- | :--- | :--- |
+| `antinix-panzer-gateway.iso` | **MD5** | `d5c6905255c9258eb353e639afcab58c` |
+| `antinix-panzer-gateway.iso` | **SHA256** | `ee62dd65b1e83ec9cdcd4893407e1bca06848375f030ffb038cd4445cbd3f854` |
+| `antinix-panzer-gateway.iso` | **SHA512** | `da0c84f53a8acf7548b979152ed4f3c6a71abeaeb3ff81526fb9c21550c021acf30e83806dd5049cf1cd884af90481ab4a54b246995b7e0ee47120872aca1b22` |
 
-| File Name | Format | Checksum Type | Hash Value |
-| :--- | :--- | :--- | :--- |
-| `antinix-panzer-gateway-ironclad.iso` | Live ISO | **MD5** | *309a659ca9d3e0f67b06c71bad525efb* |
-| `antinix-panzer-gateway-ironclad.iso` | Live ISO | **SHA256** | *5f6a2d710ede71e83670ed2c23b1085c5f2f606f1b96e5ff1476d6d62c68d336* |
+### Verification Commands:
+* **Linux:** `md5sum`, `sha256sum`, and `sha512sum antinix-panzer-gateway.iso`
+* **Windows (PowerShell):** `Get-FileHash .\antinix-panzer-gateway.iso -Algorithm [MD5|SHA256|SHA512]`
 
-### How to verify on your host system:
-
-#### For the Installation Image (.iso):
-* **Linux (MD5 / SHA256):**
-  ```bash
-  md5sum antinix-panzer-gateway-ironclad.iso
-  sha256sum antinix-panzer-gateway-ironclad.iso
-  ```
-* **Windows (PowerShell):**
-  ```powershell
-  Get-FileHash .\antinix-panzer-gateway-ironclad.iso -Algorithm MD5
-  Get-FileHash .\antinix-panzer-gateway-ironclad.iso -Algorithm SHA256
-  ```
 ---
 
 ## 🚀 Quick Start & Deployment
