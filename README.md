@@ -98,9 +98,9 @@ Inspired by Whonix, but engineered completely without systemd overhead to be fas
 
 | File Name | Checksum Type | Hash Value |
 | :--- | :--- | :--- |
-| `antinix-panzer-gateway.iso` | **MD5** | `d5c6905255c9258eb353e639afcab58c` |
-| `antinix-panzer-gateway.iso` | **SHA256** | `ee62dd65b1e83ec9cdcd4893407e1bca06848375f030ffb038cd4445cbd3f854` |
-| `antinix-panzer-gateway.iso` | **SHA512** | `da0c84f53a8acf7548b979152ed4f3c6a71abeaeb3ff81526fb9c21550c021acf30e83806dd5049cf1cd884af90481ab4a54b246995b7e0ee47120872aca1b22` |
+| `antinix-panzer-gateway.iso` | **MD5** | `8c6b0f3f81f0be43ca60c91aef8a8c99` |
+| `antinix-panzer-gateway.iso` | **SHA256** | `3cfcfcb65366cea5c27e7869dc7d8964c5a109a6f60a6775aa7eac2d2541531f` |
+| `antinix-panzer-gateway.iso` | **SHA512** | `7c4ad86bc4e88888a38d5ae612a989a6a3b2a07d8a478cf174de141806f782157a7b7a716eea29f26db34c92f62e1fb7bef4f9dddff3aaca20b91681e5286d31` |
 
 ### Verification Commands:
 * **Linux:** `md5sum`, `sha256sum`, and `sha512sum antinix-panzer-gateway.iso`
