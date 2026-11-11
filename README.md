@@ -159,7 +159,8 @@ If you prefer a clean install via our `.iso` file on custom VMs or bare metal:
 * **Bare Metal (Real PC):** Flash the ISO to a USB drive (using Rufus or Ventoy) and boot. The installation will run smoothly.
 * **VirtualBox ISO Notice (Known Issue):** If you install the `.iso` inside VirtualBox and experience a `GRUB installation failed` error at the very end, this is caused by VirtualBox's NVRAM restrictions.
   * **How to fix it:** In the GRUB installation step inside the installer, simply check the box that says **"Force extra removable"** (or *no-nvram*). Alternatively, create and run the VM in classic **Legacy/BIOS** mode instead of UEFI.
-  ```
+  * **Windows Users (VM & Portable USB Setup):** See [docs/WINDOWS.md](docs/WINDOWS.md)
+
 ---
 
 ## 🔧 Core System Snippets (Reference & Backups)
